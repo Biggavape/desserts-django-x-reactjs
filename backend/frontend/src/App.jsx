@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import DessertCard from './components/DessertCard'
+
 
 const App = () => {
-  console.log("Hello React!");
-  
+  const [desserts, setDesserts] = useState([])
+
+    useEffect(()=>{
+      fetch("/api/desserts/")
+      .then(res => res.json())
+      .then(data => setDesserts(data))
+      },[])
+    
   return (
-    <div className='red'>Desserts</div>
+    <div className='dessert-wrapper'>
+      { desserts.map(dessert => <DessertCard {...dessert}/> ) }
+    </div>
   )
 }
 

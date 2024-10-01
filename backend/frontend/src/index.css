@@ -7,3 +7,23 @@
 .red{
   color: red;
 }
+
+body{
+  min-height: 100vh;
+  .dessert-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+    margin: auto;
+    .dessert-card{
+      img{
+        width: 100%;
+        aspect-ratio: 1;
+        background-color: lightgray;
+      }
+      h4{color: lightblue;}
+      h3{color: aqua;}
+      h2{color: blue;}
+    }
+  }
+}
