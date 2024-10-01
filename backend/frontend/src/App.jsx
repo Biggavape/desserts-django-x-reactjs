@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DessertCard from './components/DessertCard'
+import "./index.css"
 
 
 const App = () => {
