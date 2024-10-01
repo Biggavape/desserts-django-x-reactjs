@@ -5,11 +5,11 @@ Inspiration from [frontendmentor](https://www.frontendmentor.io/challenges/produ
 
 
 ```batch
-python3 -m venv myvenv
+python -m venv myvenv
 ```
 
 ```batch
-myvenv\Source\bin\activate
+myvenv\Scripts\activate
 ```
 
 ```batch
